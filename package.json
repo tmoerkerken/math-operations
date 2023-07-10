@@ -1,0 +1,31 @@
+{
+  "name": "math-operations-extension",
+  "displayName": "Math Operations Extension",
+  "description": "Perform math operations on selected numbers in Visual Studio Code.",
+  "version": "0.0.1",
+  "publisher": "YourPublisherName",
+  "engines": {
+    "vscode": "^1.61.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["*"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.mathOperations",
+        "title": "Perform Math Operations on Selection"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "npm run compile"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2",
+    "@types/vscode": "^1.4.0"
+  }
+}

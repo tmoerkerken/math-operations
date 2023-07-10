@@ -4,6 +4,10 @@
   "description": "Perform math operations on selected numbers in Visual Studio Code.",
   "version": "0.0.1",
   "publisher": "Tim Moerkerken",
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/tmoerkerken/math-operations"
+	},
   "engines": {
     "vscode": "^1.61.0"
   },
